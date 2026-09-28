@@ -1,23 +1,51 @@
 aid: benyuanwisdom
+
 name: Benyuanwisdom
-description: 'Benyuanwisdom is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Benyuanwisdom is a privately held company that appears in secondary-market investment platforms such as EquityZen. It is listed on various business information sites including Crunchbase and Bloomberg, indicating it operates in the financial services sector, likely focusing on investment opportunities or capital markets. The company’s public presence is limited, with no readily accessible official website, suggesting a low‑profile or emerging status. This stub entry serves as a placeholder for future enrichment as more concrete information becomes available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/benyuanwisdom/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Finance
+- Investment
+- Private-Equity
+- Asia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/benyuanwisdom-hosts.yml
+- type: Vendors
+  url: vendors/benyuanwisdom-vendors.yml
+- type: DomainSecurity
+  url: security/benyuanwisdom-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/benyuanwisdom
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
